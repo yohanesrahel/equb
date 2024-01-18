@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equb</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<body>
+  <main>
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add Members & Contribution</h2>
+          <div class="col-auto mb-3">
+            <label for="fName">Full Name</label>
+            <input type="text" class="form-control" id="fName" />
+          </div>
+          <div class="col-auto mb-3">
+            <label for="pNo">Phone Number</label>
+            <input type="tel" class="form-control" id="pNo" />
+          </div>
+          <div class="col-auto mb-3">
+            <label for="contribution">Contribution</label>
+            <select class="form-select" aria-label="Default select example" id="contribution">
+              <option value="" selected></option>
+              <option value="1000">1,000</option>
+              <option value="2000">2,000</option>
+              <option value="3000">3,000</option>
+            </select>
+          </div>
+
+          <p id="message"></p>
+
+          <div class="col-auto">
+            <button type="button" id="bt1" class="btn btn-primary mb-3">
+              Submit
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center align-items-center">
+          <h2>Members</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Contribution</th>
+              </tr>
+            </thead>
+            <tbody id="memberTableBody">
+
+            </tbody>
+          </table>
+
+          <div class="container pt-3">
+            <div class="col-auto">
+              <button type="button" id="btG" class="btn btn-success mb-3">
+                Generate Winner
+              </button>
+            </div>
+            <h3>Winner</h3>
+            <p id="winnerHolder"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
